@@ -13,10 +13,19 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <img class="card-img-top" src="img/Lecturer.jpg" alt="Card image cap">
-                    <h5 class="card-title">Suppawong Tuarobt</h5>
+                    <h5 class="card-title">Suppawong Tuarob</h5>
                     <p class="card-text">Lecturer at Faculty of ICT, Mahidol University</p>
                     <b>E-mail:</b>
                     <p class="card-text">suppawong.tua@mahidol.edu</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <img class="card-img-top" src="img/boom.jpg" alt="Card image cap">
+                    <h5 class="card-title">Pisuth Sangkavipapojpibul</h5>
+                    <p class="card-text">Student at Faculty of ICT, Mahidol University</p>
+                    <b>E-mail:</b>
+                    <p class="card-text">pisuth.san@student.mahidol.ac.th</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -38,6 +47,7 @@
                     <p class="card-text">chanathip.por@student.mahidol.ac.th</p>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>

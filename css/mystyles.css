@@ -123,14 +123,20 @@ body {
     margin: 10px;
 }
 
+.type-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .register-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.register-form>* {
-    margin: 15px 0px 15px 0px;
+.register-form>*,
+.register-form>button {
+    margin: 15px 0px 0px 0px;
     width: 60%;
 }
 
@@ -234,6 +240,33 @@ body {
 
 .card-group {
     margin-top: 20px;
+}
+
+.result-username,
+.result-password {
+    color: red;
+    text-align: end;
+}
+
+.detail {
+    display: flex;
+}
+
+.border {
+    border: black solid 1px;
+    padding: 15px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+
+.size16 {
+    font-size: 16px;
+}
+
+.pdf {
+    text-align: center;
 }
 
 

@@ -5,7 +5,7 @@
     include_once 'includes/func.inc.php';
     include_once 'header.php';
     include_once 'includes/dbh.inc.php';
-    $sql = "SELECT marked_citation,user_first,user_last From (SELECT user_id,count(citation_id) as marked_citation FROM tagLog 
+    $sql = "SELECT marked_citation,u.user_uid From (SELECT user_id,count(citation_id) as marked_citation FROM tagLog 
     GROUP BY user_id
     ORDER BY marked_citation DESC) r
     LEFT JOIN users u ON r.user_id = u.user_id";
@@ -31,7 +31,7 @@
                                 <div class="top3">
                                     <div class=" '.$rank.' top3-profile"></div>
                                     <div class="top3-order">Rank: '.($i+1).'</div>
-                                    <div class="top3-detail">'.$row['user_first'].'</div>
+                                    <div class="top3-detail">'.$row['user_uid'].'</div>
                                     <div class="top3-score">
                                         <div class="point">'.($row['marked_citation']*10).'</div> 
                                         <div class="cystal"></div>
@@ -51,7 +51,7 @@
                 echo '<div class="highscore row">
                 <div class="profile"></div>
                 <div class="order col-1">'.($i+1).'</div>
-                <div class="detail col-6">'.$row['user_first'].'</div>
+                <div class="detail col-6">'.$row['user_uid'].'</div>
                 <div class="score">
                     <div class="point">'.($row['marked_citation']*10).'</div> 
                     <div class="cystal"></div>
